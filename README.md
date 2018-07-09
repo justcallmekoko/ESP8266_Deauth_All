@@ -1,4 +1,4 @@
-# ESP8266_Deauth_All
+# ESP8266 Deauth All
 Arduino code for your ESP8266. Deauthenticate all clients from all access points
 
 # Trash Code
