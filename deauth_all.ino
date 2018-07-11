@@ -110,10 +110,10 @@ void send_deauth(AccessPoint access_point)
 {
   // SET CHANNEL TO AP CHANNEL
   wifi_set_channel(access_point.channel);
-  delay(1);
+  delay(1); // NEED THIS DELAY OR PACKET WILL NOT SEND PROPERLY
   
   // SEND DEAUTH PACKET
-  //wifi_send_pkt_freedom(access_point.deauthPacket, 26, 0);
+  wifi_send_pkt_freedom(access_point.deauthPacket, 26, 0);
 }
 
 
