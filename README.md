@@ -13,8 +13,8 @@
 
 ## Table of Condiments
   - [How it works](#how-it-works)
-  - [Hardware](#hardware)
   - [Setup](#setup)
+    - [Hardware](#hardware)
   - [Issues](#issues)
   - [Trash Code](#trash-code)
 
@@ -23,9 +23,6 @@
   2. Clean out any APs from the last scan that did not show up in the current scan
   3. Deauthenticate all devices for one minute by sending broadcast deauth frames from all APs
   4. Repeat
-  
-## Hardware
-  * [WEMOS D1 Mini](https://www.amazon.com/Makerfocus-NodeMcu-Development-ESP8266-Compatible/dp/B01N3P763C/ref=sr_1_3?ie=UTF8&qid=1531324588&sr=8-3&keywords=wemos+d1+mini)
 
 ## Setup
 1. Add URLs to board manager URLs (File, Preferences, Additional Boards Manager URLs):  
@@ -36,6 +33,9 @@
    * `esp8266`
 3. Copy and paste the [code](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauth_all.ino) into your Arduino IDE
 4. Upload
+
+## Hardware
+  * [WEMOS D1 Mini](https://www.amazon.com/Makerfocus-NodeMcu-Development-ESP8266-Compatible/dp/B01N3P763C/ref=sr_1_3?ie=UTF8&qid=1531324588&sr=8-3&keywords=wemos+d1+mini)
 
 ## Issues
 Some devices are able to ignore deauth frames sent to broadcast so this may not work against all devices in your area
