@@ -7,10 +7,10 @@ There are a lot of repeats which could have just been used in a function (Search
 but I said, "Fuck it" and just made this.
 
 # How it works
-* Scans all channels twice
-* Cleans out any APs from the last scan that did not show up in this scan
-* Deauthenticates all for one minute by sending broadcast deauth frames from all APs
-* Repeat
+  1. Scans all channels twice
+  2. Cleans out any APs from the last scan that did not show up in this scan
+  3. Deauthenticates all for one minute by sending broadcast deauth frames from all APs
+  4. Repeat
 
 # Issues
 Some devices are able to ignore deauth frames sent to broadcast so this may not work against all devices in your area
