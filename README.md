@@ -37,7 +37,7 @@
 3. Install ESP8266 boards (Tools, Boards Manager):  
    * `arduino-esp8266-deauther`
    * `esp8266`
-4. Copy and paste the [code](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauth_all.ino) into your Arduino IDE
+4. Copy and paste the [code](https://raw.githubusercontent.com/the-red-team/ESP8266_Deauth_All/master/deauth_all.ino) into your Arduino IDE
 5. Select the WeMos D1 Mini Board (Tools, Board, <b>ESP8266 Deauther Modules</b>)
 6. Upload
 
