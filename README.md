@@ -23,19 +23,23 @@
 
 ## How it works
   1. Scan all channels twice
+    <p><img alt="Scan" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/de3.jpg" width="500"></p>  
   2. Clean out any APs from the last scan that did not show up in the current scan
   3. Deauthenticate all devices for one minute by sending broadcast deauth frames from all APs
+    <p><img alt="Deauth" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/de.jpg" width="400"></p>  
   4. Repeat
 
 ## Setup
-1. Add URLs to board manager URLs (File, Preferences, Additional Boards Manager URLs):  
+1. Install and open the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+2. Add URLs to board manager URLs (File, Preferences, Additional Boards Manager URLs):  
    * `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
    * `http://phpsecu.re/esp8266/package_deauther_index.json`
-2. Install ESP8266 boards (Tools, Boards Manager):  
+3. Install ESP8266 boards (Tools, Boards Manager):  
    * `arduino-esp8266-deauther`
    * `esp8266`
-3. Copy and paste the [code](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauth_all.ino) into your Arduino IDE
-4. Upload
+4. Copy and paste the [code](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauth_all.ino) into your Arduino IDE
+5. Select the WeMos D1 Mini Board (Tools, Board, <b>ESP8266 Deauther Modules</b>)
+6. Upload
 
 ## Hardware
   * [WEMOS D1 Mini](https://www.amazon.com/Makerfocus-NodeMcu-Development-ESP8266-Compatible/dp/B01N3P763C/ref=sr_1_3?ie=UTF8&qid=1531324588&sr=8-3&keywords=wemos+d1+mini)
