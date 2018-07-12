@@ -18,6 +18,7 @@
   - [How it works](#how-it-works)
   - [Setup](#setup)
     - [Hardware](#hardware)
+    - [Uploading Code](#uploading-code)
   - [Issues](#issues)
   - [Trash Code](#trash-code)
 
@@ -30,6 +31,11 @@
   4. Repeat
 
 ## Setup
+
+### Hardware
+  * [WEMOS D1 Mini](https://www.amazon.com/Makerfocus-NodeMcu-Development-ESP8266-Compatible/dp/B01N3P763C/ref=sr_1_3?ie=UTF8&qid=1531324588&sr=8-3&keywords=wemos+d1+mini)
+
+### Uploading Code
 1. Install and open the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 2. Add URLs to board manager URLs (File, Preferences, Additional Boards Manager URLs):  
    * `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
@@ -40,9 +46,6 @@
 4. Copy and paste the [code](https://raw.githubusercontent.com/the-red-team/ESP8266_Deauth_All/master/deauth_all.ino) into your Arduino IDE
 5. Select the WeMos D1 Mini Board (Tools, Board, <b>ESP8266 Deauther Modules</b>)
 6. Upload
-
-## Hardware
-  * [WEMOS D1 Mini](https://www.amazon.com/Makerfocus-NodeMcu-Development-ESP8266-Compatible/dp/B01N3P763C/ref=sr_1_3?ie=UTF8&qid=1531324588&sr=8-3&keywords=wemos+d1+mini)
 
 ## Issues
 Some devices are able to ignore deauth frames sent to broadcast so this may not work against all devices in your area
