@@ -90,8 +90,6 @@ class AccessPoint
     int channel;
     int packet_limit = 500;
     int channels[14] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // ARRAY TO HELP DETERMINE ACTIVE CHANNEL
-    // ARRAY TO STORE CLIENTS
-    int clients[50][6] = {};
     // THANKS spacehuhn
     uint8_t deauthPacket[26] = {
       /*  0 - 1  */ 0xC0, 0x00, //type, subtype c0: deauth (a0: disassociate)
