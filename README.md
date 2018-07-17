@@ -15,12 +15,26 @@
 </p>
 
 ## Table of Condiments
+  - [Background](#background)
   - [How it works](#how-it-works)
   - [Setup](#setup)
     - [Hardware](#hardware)
     - [Uploading Code](#uploading-code)
   - [Issues](#issues)
   - [Trash Code](#trash-code)
+  
+## Background
+A WiFi [deauthentication attack](https://en.wikipedia.org/wiki/Wi-Fi_deauthentication_attack) is a form of denial of service where an attacker crafts 802.11 frames designed to sever the connection between a WiFi client and a wireless access point.  
+
+These frames are unencrypted since most devices do not support the 802.11w standard and because of this vulnerability, there is no way to guard against this attack as long as these frames appear to come from a legitimate source.  
+
+An attacker can scan for surrounding access points, clone each BSSID it finds, and broadcast deauthentication frames spoofing the source MAC address as the access points it found. As other devices receive these deauthentication frames from their access point, they will be forced off of the network.  
+
+The attacker doesn't even need to be on the target network to perform this attack.  
+
+My main objective for this project was to create a device that would be small enough to carry anywhere and be able to scan and maintain a list containing only of access points it has found recently while removing access points no longer in the area. Each new scan will then result in a deauthentication attack spanning one minute.  
+
+<b>Do not be a dumbass and get yourself in trouble. This is a form of denial of service and in most countries, it is illegal without the explicit consent from the owner of the target network.</b>
 
 ## How it works
   1. Scan all channels twice
