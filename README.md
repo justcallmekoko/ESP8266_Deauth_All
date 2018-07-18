@@ -52,6 +52,8 @@ My main objective for this project was to create a device that would be small en
   * [WEMOS D1 Mini](https://www.amazon.com/Makerfocus-NodeMcu-Development-ESP8266-Compatible/dp/B01N3P763C/ref=sr_1_3?ie=UTF8&qid=1531324588&sr=8-3&keywords=wemos+d1+mini)
   
 ## Setup Using Arduino IDE
+  1. Download the [.bin file](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauthall.ino.d1_mini.bin)
+  2. Download the NodeMCU Flasher
 
 ### Uploading Code
 1. Install and open the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
