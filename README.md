@@ -21,6 +21,7 @@
     - [Hardware](#hardware)
     - [Uploading Code Using Arduino IDE](#uploading-code-using-arduino-ide)
     - [Flashing the Firmware](#flashing-the-firmware)
+  - [Usage](#usage)
   - [Issues](#issues)
   - [Trash Code](#trash-code)
   
@@ -63,9 +64,11 @@ My main objective for this project was to create a device that would be small en
 6. Upload
 
 ## Flashing The Firmware
-
-1. Download the [.bin file](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauthall.ino.d1_mini.bin)
-  2. Download the NodeMCU Flasher
+  1. Download the [.bin file](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauthall.ino.d1_mini.bin)
+  2. Download the [NodeMCU Flasher](https://github.com/nodemcu/nodemcu-flasher)
+  
+## Usage
+Just plug the device into any USB power source whether it's a computer, wall socket, or portable power supply, and let the device do the rest of the work. Refer to the run cycle of the attack [here](#how-it-works) which will run automatically
 
 ## Issues
 Some devices are able to ignore deauth frames sent to broadcast so this may not work against all devices in your area
