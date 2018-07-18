@@ -19,9 +19,8 @@
   - [How it works](#how-it-works)
   - [Setup](#setup)
     - [Hardware](#hardware)
-    - [Setup Using Arduino IDE](#setup-using-arduino-ide)
-      - [Uploading Code](#uploading-code)
-    - [Setup Using bin file](#setup-using-bin-file)
+    - [Uploading Code Using Arduino IDE](#uploading-code-using-arduino-ide)
+    - [Flashing the Firmware](#flashing-the-firmware)
   - [Issues](#issues)
   - [Trash Code](#trash-code)
   
@@ -51,11 +50,7 @@ My main objective for this project was to create a device that would be small en
 ### Hardware
   * [WEMOS D1 Mini](https://www.amazon.com/Makerfocus-NodeMcu-Development-ESP8266-Compatible/dp/B01N3P763C/ref=sr_1_3?ie=UTF8&qid=1531324588&sr=8-3&keywords=wemos+d1+mini)
   
-## Setup Using Arduino IDE
-  1. Download the [.bin file](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauthall.ino.d1_mini.bin)
-  2. Download the NodeMCU Flasher
-
-### Uploading Code
+## Uploading Code Using Arduino IDE
 1. Install and open the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 2. Add URLs to board manager URLs (File, Preferences, Additional Boards Manager URLs):  
    * `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
@@ -67,7 +62,10 @@ My main objective for this project was to create a device that would be small en
 5. Select the WeMos D1 Mini Board (Tools, Board, <b>ESP8266 Deauther Modules</b>)
 6. Upload
 
-## Setup Using bin File
+## Flashing The Firmware
+
+1. Download the [.bin file](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauthall.ino.d1_mini.bin)
+  2. Download the NodeMCU Flasher
 
 ## Issues
 Some devices are able to ignore deauth frames sent to broadcast so this may not work against all devices in your area
