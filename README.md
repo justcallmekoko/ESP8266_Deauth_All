@@ -19,7 +19,9 @@
   - [How it works](#how-it-works)
   - [Setup](#setup)
     - [Hardware](#hardware)
-    - [Uploading Code](#uploading-code)
+    - [Setup Using Arduino IDE](#setup-using-arduino-ide)
+      - [Uploading Code](#uploading-code)
+    - [Setup Using bin file](#setup-using-bin-file)
   - [Issues](#issues)
   - [Trash Code](#trash-code)
   
@@ -48,6 +50,8 @@ My main objective for this project was to create a device that would be small en
 
 ### Hardware
   * [WEMOS D1 Mini](https://www.amazon.com/Makerfocus-NodeMcu-Development-ESP8266-Compatible/dp/B01N3P763C/ref=sr_1_3?ie=UTF8&qid=1531324588&sr=8-3&keywords=wemos+d1+mini)
+  
+## Setup Using Arduino IDE
 
 ### Uploading Code
 1. Install and open the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
@@ -60,6 +64,8 @@ My main objective for this project was to create a device that would be small en
 4. Copy and paste the [code](https://raw.githubusercontent.com/the-red-team/ESP8266_Deauth_All/master/deauth_all.ino) into your Arduino IDE
 5. Select the WeMos D1 Mini Board (Tools, Board, <b>ESP8266 Deauther Modules</b>)
 6. Upload
+
+## Setup Using bin File
 
 ## Issues
 Some devices are able to ignore deauth frames sent to broadcast so this may not work against all devices in your area
