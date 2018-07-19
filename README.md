@@ -30,9 +30,7 @@ A WiFi [deauthentication attack](https://en.wikipedia.org/wiki/Wi-Fi_deauthentic
 
 These frames are unencrypted since most devices do not support the 802.11w standard and because of this vulnerability, there is no way to guard against this attack as long as these frames appear to come from a legitimate source.  
 
-An attacker can scan for surrounding access points, clone each BSSID it finds, and broadcast deauthentication frames spoofing the source MAC address as the access points it found. As other devices receive these deauthentication frames from their access point, they will be forced off of the network.  
-
-The attacker doesn't even need to be on the target network to perform this attack.  
+An attacker can scan for surrounding access points, clone each BSSID it finds, and broadcast deauthentication frames spoofing the source MAC address as the access points it found. As other devices receive these deauthentication frames from their access point, they will be forced off of the network. The attacker doesn't even need to be on the target network to perform this attack.  
 
 My main objective for this project was to create a device that would be small enough to carry anywhere and be able to scan and maintain a list containing only of access points it has found recently while removing access points no longer in the area. Each new scan will then result in a deauthentication attack spanning one minute.  
 
