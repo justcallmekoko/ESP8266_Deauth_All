@@ -38,10 +38,10 @@ My main objective for this project was to create a device that would be small en
 
 ## How it works
   1. Scan all channels twice
-    <p><img alt="Scan" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/de3.jpg" width="500"></p>  
+    <p align="center"><img alt="Scan" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/de3.jpg" width="700"></p>  
   2. Clean out any APs from the last scan that did not show up in the current scan
   3. Deauthenticate all devices for one minute by sending broadcast deauth frames from all APs
-    <p><img alt="Deauth" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/de.jpg" width="400"></p>  
+    <p align="center"><img alt="Deauth" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/de.jpg" width="600"></p>  
   4. Repeat
 
 ## Setup
