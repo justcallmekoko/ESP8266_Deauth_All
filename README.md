@@ -57,9 +57,10 @@ My main objective for this project was to create a device that would be small en
 3. Install ESP8266 boards (Tools, Boards Manager):  
    * `arduino-esp8266-deauther`
    * `esp8266`
-4. Copy and paste the [code](https://raw.githubusercontent.com/the-red-team/ESP8266_Deauth_All/master/deauth_all.ino) into your Arduino IDE
-5. Select the WeMos D1 Mini Board (Tools, Board, <b>ESP8266 Deauther Modules</b>)
-6. Upload
+4. Install the [Adafruit SSD1306 Wemos Mini OLED](https://github.com/stblassitude/Adafruit_SSD1306_Wemos_OLED) library
+5. Copy and paste the [code](https://raw.githubusercontent.com/the-red-team/ESP8266_Deauth_All/master/deauth_all.ino) into your Arduino IDE
+6. Select the WeMos D1 Mini Board (Tools, Board, <b>ESP8266 Deauther Modules</b>)
+7. Upload
 
 ### Flashing The Firmware
   1. Download the [.bin file](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauthall.ino.d1_mini.bin)
