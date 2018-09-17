@@ -131,7 +131,7 @@ void send_deauth(AccessPoint access_point)
   delay(1);
   
   // SEND DEAUTH PACKET
-  //wifi_send_pkt_freedom(access_point.deauthPacket, 26, 0);
+  wifi_send_pkt_freedom(access_point.deauthPacket, 26, 0);
 }
 
 // FUNCTION TO ADD NEW APs TO THE MASTER LIST OF APs
