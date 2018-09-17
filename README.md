@@ -6,12 +6,21 @@
   <b>Arduino code for your ESP8266. Deauthenticate all clients from all access points</b>
   <br>
   <br>
-  <a href="https://www.instagram.com/the.red.team4">Instagram</a>
+  <a href="https://www.instagram.com/heinouscrims">Instagram</a>
  - <a href="https://www.youtube.com/channel/UCQdi3MDHHMm7u3cMkEY329Q">YouTube</a>
  - <a href="https://208.68.37.54">Website</a>
   <br>
   <br>
   <b>Like my content? Show your support by subscribing to my channel and following my page.</b>
+  <br>
+  <br>
+  <img alt="Librarian" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/IMG_2917.JPG" width="300">
+  <img alt="Librarian" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/IMG_2917.JPG" width="300">
+  <img alt="Librarian" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/IMG_2917.JPG" width="300">
+  <img alt="Librarian" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/IMG_2917.JPG" width="300">
+  <br>
+  <br>
+  <b><span style="font-size: +25px"/>Supports the Wemos D1 Mini OLED Shield</span></b>
 </p>
 
 ## Table of Condiments
