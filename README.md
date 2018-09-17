@@ -57,6 +57,7 @@ My main objective for this project was to create a device that would be small en
 
 ### Hardware
   * [WEMOS D1 Mini](https://www.amazon.com/Makerfocus-NodeMcu-Development-ESP8266-Compatible/dp/B01N3P763C/ref=sr_1_3?ie=UTF8&qid=1531324588&sr=8-3&keywords=wemos+d1+mini)
+  * [OLED Shield](https://www.amazon.com/dp/B076ZH4C8T/?coliid=I39R9FBCDGMH9J&colid=JRA2DAWA4MVZ&psc=0&ref_=lv_ov_lig_dp_it)
   
 ### Uploading Code Using Arduino IDE
 1. Install and open the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
